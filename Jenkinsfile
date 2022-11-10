@@ -1,7 +1,7 @@
 pipeline {
   environment {
-    registry = "vinod9782/inspired"
-    registryCredential = 'dockerhub'
+    registry = "narasimha8780/games"
+    registryCredential = 'dockerhub credentials'
     dockerImage = ''
   }    
   agent any
@@ -36,7 +36,7 @@ pipeline {
     stage('Remove Unused docker image') {
       steps{
         sh "docker rmi $registry:$BUILD_NUMBER"
-        sh "docker run -d --name Inspiredit9 -p 8088:8080 vinod9782/inspired:$BUILD_NUMBER"
+        sh "docker run -d --name dockerpipeline -p 8088:8080 narasimha8780/games:$BUILD_NUMBER"
         
       }
     }     
