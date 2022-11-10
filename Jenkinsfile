@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/narasimha8780/game-of-life.git'
+        git 'https://github.com/Narasimha8780/game-of-life.git'
       }
     }
         stage('Build'){
