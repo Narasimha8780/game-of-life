@@ -2,7 +2,7 @@ version: '3.5'
 services:
 
   tomcat:
-    image: vinod9782/$BUILD_NUMBER
+    image: narasimha8780/$BUILD_NUMBER
     ports: 
       - "8080:8080"
     networks:
